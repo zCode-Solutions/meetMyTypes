@@ -7,10 +7,10 @@ In addition to helping Tem achieve his goal he has allowed a group of beginner d
 ## Using the Meet my Types website
 This repo is meant to hold the Administrator Website for the admin Tem of Meet My Types Below is the list of features for the client to use.
 1. Update user profiles
-2. 
+2. To be continued....
 
 ## Contribution Guidelines
-If you're interested in contributing and growing your skillset furhter please refer to the <a href="" target="_blank">Contribution Docs</a>
+If you're interested in contributing and growing your skillset furhter please refer to the <a href="https://github.com/zCode-Solutions/meetMyTypes/wiki/Contribution-Docs" target="_blank">Contribution Docs</a>
 
 # Authors
 
