@@ -14,7 +14,12 @@ If you're interested in contributing and growing your skillset furhter please re
 
 # Authors
 
-Zachary Farley, Anthony Tweed, Musiteli Muboso, Jason Brunelle, Jongkoy, Vanessa Mercado
+Zachary Farley 
+Anthony Tweed 
+Musiteli Muboso 
+Jason Brunelle 
+Jongkoy 
+Vanessa Mercado
 
 ## Contributors (for those who assist with bug identification and code fixes)
 
