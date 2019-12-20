@@ -14,9 +14,8 @@ If you're interested in contributing and growing your skillset furhter please re
 
 ## How can you Learn from this?
 Check out this doc to see how you can use this repo to level up your own skills! [Learn from me]()
+
 # Authors
 
 Curious for whose on the team? Checkout the [Authors file](https://github.com/zCode-Solutions/meetMyTypes/blob/dev/AUTHORS.md)
-
-## Contributors (for those who assist with bug identification and code fixes)
 
