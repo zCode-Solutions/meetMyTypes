@@ -1,4 +1,4 @@
-[![Meet My Types Logo](https://github.com/zCode-Solutions/meetMyTypes/blob/dev/meetmytypesadmin/logo/meetmytypes-logo.png)]
+[![Meet My Types Logo](https://github.com/zCode-Solutions/meetMyTypes/blob/dev/meetmytypesadmin/logo/meetmytypes-logo.png)](https://www.meetmytypes.com/)
 # About Meet My Types
 
 The organization Meet my Types was founded by Tem whose purpose is not to let people find love "whenever" but ASAP! Tem has been in business for over a year consulting with clients on helping them find their ideal love type. He's been able to help hundreds of people identify their love type and provide them with advice to find their own type based on their core behavior. Using Astrogical software he's able to provide clients with detailed information on their inner persona's so they can cut the fluff and start getting to know someone immdediately! This project is to help him expand his business from local clients in GA to clients across the US!
