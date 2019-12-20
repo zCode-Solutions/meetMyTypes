@@ -1,7 +1,7 @@
 ---
 name: Security Improvements
 about: Let us know if we are not being secure!
-title: ''
+title: "[SECURITY]"
 labels: Security Issue
 assignees: ''
 
