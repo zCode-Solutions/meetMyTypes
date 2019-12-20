@@ -16,7 +16,7 @@ If you're interested in contributing and growing your skillset furhter please re
 ## Project Scope
 For details on the scope of this project please refer to this document [Project Scrope](https://github.com/zCode-Solutions/meetMyTypes/blob/dev/PROJECT_SCOPE.md)
 ## How can you Learn from this?
-Check out this doc to see how you can use this repo to level up your own skills! [Learn from me]()
+Check out this doc to see how you can use this repo to level up your own skills! [Learn from me](https://github.com/zCode-Solutions/meetMyTypes/blob/dev/LEARN_FROM_ME.md)
 
 # Authors
 Curious for whose on the team? Checkout the [Authors file](https://github.com/zCode-Solutions/meetMyTypes/blob/dev/AUTHORS.md)
