@@ -8,6 +8,7 @@ Within most corporate entities the standard work of developers include working o
 - I want to [FEATURE]
 - In order to [BUSINESS VALUE]
 - Acceptance Criteria
+
 The first row lets the developer know what type of user the feature is for. For instance is this an administrator, normal user, new user?
 When building out a feature it's good to know who it's for so we know what kind of permissions to set in place. The second row describes the
 specific feature or action to complete for example I want to log in with an email address and password, I want to modify user profiles etc.
