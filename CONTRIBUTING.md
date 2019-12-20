@@ -20,7 +20,7 @@ $ yarn start
 ```
 ## How to Setup TEST Environment
 1. Fork test-branch repo
-2.Clone Forked repo
+2. Clone Forked repo
 
 ```bash
 $ git clone https://github.com/<your github username>/meetMyTypes.git
@@ -30,7 +30,7 @@ $ yarn start
 ```
 ## How to Setup PROD Environment
 1. Fork master-branch repo
-2.Clone Forked repo
+2. Clone Forked repo
 
 ```bash
 $ git clone https://github.com/<your github username>/meetMyTypes.git
@@ -42,7 +42,7 @@ $ yarn start
 
 ### How to File a Bug report
 After following instructions for setup PROD environment and you've noticed a bug search the issue tracker and see if someone else in the community has created a ticket and if not go ahead and create one! Follow the below guidelines for successful submission
-- Subject: [BUG]
+- Subject: summary of issue [BUG]
 - Comment: within issue body please include detailed steps for how to reproduce bug.
 
 If this is an issue you believe you can fix the fork the repo and create a branch with a descriptive name. See below example
@@ -50,18 +50,18 @@ If this is an issue you believe you can fix the fork the repo and create a branc
 
 ### Format change requests: 
 Is our code missing documentation? help us by adding a few comments that explain what's going on. Open an issue with the below properties.
-- Subject: [Documentation]
+- Subject: summary of recommendation [Documentation]
 - Comment: Please include the title of what document and a snippet of what should be changed along with a suggestion of what it should be to be more clear.
 
 
 ### Security enhancements: 
 Are we making ourselves vulnerable somewhere? Let us know by opening an issue! Use the below properties when opening the issue
-- Subject: [Security Issue]
+- Subject: summary of security flaw [Security Issue]
 - Comment: Please detail out how how the code can be improved to make it more secure and possibly include a snippet of code to resolve the issue.
 
 ### Questions?
 if you have any questions about contributing please feel free to open an issue with the below issue properties
-- Subject: [Question]
+- Subject: !uestion [Question]
 
 
 ### Help Wanted (reserved for Dev Team)
