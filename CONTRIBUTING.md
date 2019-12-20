@@ -61,7 +61,7 @@ Are we making ourselves vulnerable somewhere? Let us know by opening an issue! U
 
 ### Questions?
 if you have any questions about contributing please feel free to open an issue with the below issue properties
-- Subject: !uestion [Question]
+- Subject: Question [Question]
 
 
 ### Help Wanted (reserved for Dev Team)
