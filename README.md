@@ -13,6 +13,8 @@ This repo is meant to hold the Administrator Website for the admin Tem of Meet M
 ## Contribution Guidelines
 If you're interested in contributing and growing your skillset furhter please refer to the [Contribution Docs](https://github.com/zCode-Solutions/meetMyTypes/blob/dev/CONTRIBUTING.md). Before contributing please look through the [Code of condunct](https://github.com/zCode-Solutions/meetMyTypes/blob/dev/CODE_OF_CONDUCT.md) and make sure you comply.
 
+## Project Scope
+For details on the scope of this project please refer to this document [Project Scrope](https://github.com/zCode-Solutions/meetMyTypes/blob/dev/PROJECT_SCOPE.md)
 ## How can you Learn from this?
 Check out this doc to see how you can use this repo to level up your own skills! [Learn from me]()
 
