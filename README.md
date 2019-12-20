@@ -10,16 +10,13 @@ This repo is meant to hold the Administrator Website for the admin Tem of Meet M
 2. To be continued....
 
 ## Contribution Guidelines
-If you're interested in contributing and growing your skillset furhter please refer to the <a href="https://github.com/zCode-Solutions/meetMyTypes/wiki/Contribution-Docs" target="_blank">Contribution Docs</a>
+If you're interested in contributing and growing your skillset furhter please refer to the [Contribution Docs](https://github.com/zCode-Solutions/meetMyTypes/blob/dev/CONTRIBUTING.md)
 
+## How can you Learn from this?
+Check out this doc to see how you can use this repo to level up your own skills! [Learn from me]()
 # Authors
 
-Zachary Farley 
-Anthony Tweed 
-Musiteli Muboso 
-Jason Brunelle 
-Jongkoy 
-Vanessa Mercado
+Curious for whose on the team? Checkout the [Authors file](https://github.com/zCode-Solutions/meetMyTypes/blob/dev/AUTHORS.md)
 
 ## Contributors (for those who assist with bug identification and code fixes)
 
