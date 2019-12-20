@@ -41,30 +41,20 @@ $ yarn start
 ## Types of Contributions we are looking for
 
 ### How to File a Bug report
-After following instructions for setup PROD environment and you've noticed a bug search the issue tracker and see if someone else in the community has created a ticket and if not go ahead and create one! Follow the below guidelines for successful submission
-- Subject: summary of issue [BUG]
-- Comment: within issue body please include detailed steps for how to reproduce bug.
+After following instructions for setup PROD environment and you've noticed a bug search the issue tracker and see if someone else in the community has created a ticket and if not go ahead and create one! Open an isuse using the BUG template.
 
 If this is an issue you believe you can fix the fork the repo and create a branch with a descriptive name. See below example
 > git checkout -b 325-add-new format-on-read-me
 
 ### Format change requests: 
-Is our code missing documentation? help us by adding a few comments that explain what's going on. Open an issue with the below properties.
-- Subject: summary of recommendation [Documentation]
-- Comment: Please include the title of what document and a snippet of what should be changed along with a suggestion of what it should be to be more clear.
+Is our code missing documentation? help us by adding a few comments that explain what's going on. Open up an issue using the Documentation Template
 
 
 ### Security enhancements: 
-Are we making ourselves vulnerable somewhere? Let us know by opening an issue! Use the below properties when opening the issue
-- Subject: summary of security flaw [Security Issue]
-- Comment: Please detail out how how the code can be improved to make it more secure and possibly include a snippet of code to resolve the issue.
+Are we making ourselves vulnerable somewhere? Let us know by opening an issue! UNavigate to the Issues and open a Security template
 
 ### Questions?
-if you have any questions about contributing please feel free to open an issue with the below issue properties
-- Subject: Question [Question]
+if you have any questions about contributing please feel free to open an issue using the question issue template.
 
-
-### Help Wanted (reserved for Dev Team)
-Feeling confident with a resume to back it? HELP US OUT! Look out for this Tag (Help Wanted) opened by one of the members on our Dev team and email me here (zach@zcodesolutions.com) with the subject [HELPING WITH MEETMYTYPES PROJECT] and let me know how you can help. We are always looking for code reviewers :). 
 
 Please note if an issue is opened without following the above guidelines or if it's misplaced then your issue will be closed until the proper format is followed.
