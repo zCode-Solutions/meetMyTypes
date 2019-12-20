@@ -10,12 +10,11 @@ This repo is meant to hold the Administrator Website for the admin Tem of Meet M
 2. To be continued....
 
 ## Contribution Guidelines
-If you're interested in contributing and growing your skillset furhter please refer to the [Contribution Docs](https://github.com/zCode-Solutions/meetMyTypes/blob/dev/CONTRIBUTING.md)
+If you're interested in contributing and growing your skillset furhter please refer to the [Contribution Docs](https://github.com/zCode-Solutions/meetMyTypes/blob/dev/CONTRIBUTING.md). Before contributing please look through the [Code of condunct](https://github.com/zCode-Solutions/meetMyTypes/blob/dev/CODE_OF_CONDUCT.md) and make sure you comply.
 
 ## How can you Learn from this?
 Check out this doc to see how you can use this repo to level up your own skills! [Learn from me]()
 
 # Authors
-
 Curious for whose on the team? Checkout the [Authors file](https://github.com/zCode-Solutions/meetMyTypes/blob/dev/AUTHORS.md)
 
