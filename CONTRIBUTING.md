@@ -8,33 +8,40 @@ In order to make a substantial contribution to the project, we ask that you have
 2. AWS
 3. Node.js
 
-## How to setup DEV Environment
-1. fork dev-branch repo
-2. clone forked repo
+## Environment Setup
 
+### Pre Requisites and version information
+1. [Node.js v 13.5.0] (https://nodejs.org/en/)
+2. [Yarn v 1.21.1] (https://yarnpkg.com/en/docs/install)
+
+### Clone Repository
 ```bash
 $ git clone https://github.com/<your github username>/meetMyTypes.git
-$ cd meetMyTypes/meetmytypesadmin
+```
+### How to setup DEV Environment
+1. Checkout *dev* branch  repo
+2. Run Yarn
+
+```bash
+$ git checkout dev
 $ yarn install
 $ yarn start
 ```
-## How to Setup TEST Environment
-1. Fork test-branch repo
-2. Clone Forked repo
+### How to Setup TEST Environment
+1. Checkout *test* branch  repo
+2. Run Yarn
 
 ```bash
-$ git clone https://github.com/<your github username>/meetMyTypes.git
-$ cd meetMyTypes/meetmytypesadmin
+$ git checkout test
 $ yarn install
 $ yarn start
 ```
-## How to Setup PROD Environment
-1. Fork master-branch repo
-2. Clone Forked repo
+### How to Setup PROD Environment
+1. Checkout *master* branch  repo
+2. Run Yarn
 
 ```bash
-$ git clone https://github.com/<your github username>/meetMyTypes.git
-$ cd meetMyTypes/meetmytypesadmin
+$ git checkout master
 $ yarn install
 $ yarn start
 ```
