@@ -1,50 +1,67 @@
-import React, { useState } from 'react';
+import React, { Component } from 'react';
 import { Auth } from 'aws-amplify';
 
-export default function Login() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-
-  // might want better validation with messages
-  const validateForm = () => {
-    return email.length > 0 && password.length > 0;
+export default class Login extends Component {
+  state = {
+    email: '',
+    password: '',
   };
 
-  const handleSubmit = async event => {
+  onChangeEmail = event => {
+    this.setState({
+      email: event.target.value,
+    });
+  };
+
+  onChangePassword = event => {
+    this.setState({
+      password: event.target.value,
+    });
+  };
+
+  validateForm = () => {
+    return this.state.email.length > 0 && this.state.password.length > 0;
+  };
+
+  handleLoginSubmit = async event => {
     event.preventDefault();
     try {
-      await Auth.signIn(email, password);
+      await Auth.signIn(this.state.email, this.state.password);
       alert('logged in');
       // redirect user to /admin
     } catch (err) {
       alert(err.message);
     }
   };
-  return (
-    <div className="login">
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="email">Email</label>
-        <input
-          autoFocus
-          name="email"
-          type="text"
-          value={email}
-          placeholder="Enter your email"
-          onChange={event => setEmail(event.target.value)}
-        />
 
-        <label htmlFor="email">Password</label>
-        <input
-          name="password"
-          type="password"
-          value={password}
-          placeholder="Enter your password"
-          onChange={event => setPassword(event.target.value)}
-        />
-        <button disabled={!validateForm()} type="submit">
-          Login
-        </button>
-      </form>
-    </div>
-  );
+  render() {
+    const { email, password } = this.state;
+    return (
+      <div className="login">
+        <form onSubmit={this.handleLoginSubmit}>
+          <label htmlFor="email">Email</label>
+          <input
+            autoFocus
+            name="email"
+            type="text"
+            value={email}
+            placeholder="Enter your email"
+            onChange={this.onChangeEmail}
+          />
+
+          <label htmlFor="email">Password</label>
+          <input
+            name="password"
+            type="password"
+            value={password}
+            placeholder="Enter your password"
+            onChange={this.onChangePassword}
+          />
+          <button disabled={!this.validateForm()} type="submit">
+            Login
+          </button>
+        </form>
+      </div>
+    );
+  }
 }
