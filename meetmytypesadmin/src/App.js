@@ -5,6 +5,7 @@ import Sidenav from "./components/Sidenav";
 import Home from "./components/Home";
 import NewUser from "./containers/NewUser";
 import NotFoundPage from "./components/NotFoundPage";
+import CurrentUsers from "./containers/CurrentUsers";
 
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -16,6 +17,7 @@ function App() {
       <Switch>
       <Route exact path="/" component={Home}/>
       <Route path="/new-user" component={NewUser}/>
+      <Route path="/current-users" component={CurrentUsers}/>
       <Route component={NotFoundPage}/>
       </Switch>
     </Fragment>

@@ -12,10 +12,11 @@ body{
   color: var(--mainBlue) !important;
 }
 .text-sidebar{
-  font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   color: var(--mainWhite);
 }
 .main{
-  margin-left: 20vw;
+  margin-left: 15vw;
 }
+
+
