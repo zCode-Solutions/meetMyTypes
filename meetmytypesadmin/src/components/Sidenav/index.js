@@ -1,12 +1,11 @@
 import React, { Fragment } from "react";
-import { BrowserRouter, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import logo from '../../logo/meetmytypes-logo.png';
 import "./style.css";
 
 export default () => {
   return (
-    <BrowserRouter>
       <Fragment>
         <div className="sidenav">
         <Link className="btnn" to="/">
@@ -18,6 +17,5 @@ export default () => {
         <Link  to="/profile">PROFILE</Link>
         </div>
       </Fragment>
-    </BrowserRouter>
   );
 };

@@ -16,3 +16,6 @@ body{
   text-transform: uppercase;
   color: var(--mainWhite);
 }
+.main{
+  margin-left: 20vw;
+}

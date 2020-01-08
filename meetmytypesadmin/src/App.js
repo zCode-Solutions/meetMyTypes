@@ -1,13 +1,24 @@
-import React from "react";
+import React, { Fragment } from "react";
+import { Switch, Route  } from "react-router-dom";
+
+import Sidenav from "./components/Sidenav";
+import Home from "./components/Home";
+import NewUser from "./containers/NewUser";
+import NotFoundPage from "./components/NotFoundPage";
+
 import "./App.css";
-import Sidebar from "./containers/Sidebar";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <React.Fragment>
-      <Sidebar/>
-    </React.Fragment>
+    <Fragment>
+      <Sidenav/>
+      <Switch>
+      <Route exact path="/" component={Home}/>
+      <Route path="/new-user" component={NewUser}/>
+      <Route component={NotFoundPage}/>
+      </Switch>
+    </Fragment>
   );
 }
 
