@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import NewUser from "./containers/NewUser";
 import NotFoundPage from "./components/NotFoundPage";
 import CurrentUsers from "./containers/CurrentUsers";
+import Search from "./containers/Search";
 
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -18,6 +19,7 @@ function App() {
       <Route exact path="/" component={Home}/>
       <Route path="/new-user" component={NewUser}/>
       <Route path="/current-users" component={CurrentUsers}/>
+      <Route path="/search" component={Search}/>
       <Route component={NotFoundPage}/>
       </Switch>
     </Fragment>
