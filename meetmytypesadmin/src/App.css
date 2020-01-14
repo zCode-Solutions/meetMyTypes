@@ -19,4 +19,25 @@ body{
   margin-left: 15vw;
 }
 
+.main div {
+  display: flex;
+  flex-flow: row wrap;
+}
 
+.user-card {
+  border: 1px solid black;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.user-card img,
+.user-card div {
+  display: block;
+  width: 100%;
+}
+
+.user-card div {
+  margin: 0.5rem;
+}
