@@ -1,12 +1,12 @@
 import React, { Component, Fragment } from "react";
 import Title from "../../components/Title";
-import NewUserList from "../../components/NewUsersList";
+import NewUserList from "../../components/NewUserList";
 import "./style.css";
 
 export default class extends Component {
-  state = {
-    users: []
-  };
+    state = {
+      users: []
+    };    
 
   componentDidMount() {
     const url = "http://localhost:3004/users";
@@ -16,11 +16,14 @@ export default class extends Component {
   }
 
   render() {
+    const newUser = this.state.users.map(user => {
+      return <NewUserList key={user.id} user={user} {...this.props}/>;
+    });
     return (
       <Fragment>
         <div className="main">
           <Title title="New User" detail="Below are the new users who have recently filled out" />
-          <NewUserList users={this.state.users}/>
+          <div>{newUser}</div>
         </div>
       </Fragment>
     );

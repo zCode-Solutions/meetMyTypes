@@ -1,0 +1,19 @@
+.btn-primary:hover {
+    color: #fe4e6c;
+    background-color: #fe4e6c !important;
+  }
+  
+  .btn-primary:focus {
+    color: #fe2348;
+    background-color: #fe2348!important;
+  }
+  
+  .btn-primary:active {
+    color: white;
+    background-color: #fe4e6c  !important;
+  }
+
+  .btn-primary {
+    color: white;
+    background-color: #fe2348!important;
+  }
