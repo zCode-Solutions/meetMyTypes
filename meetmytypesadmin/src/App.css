@@ -35,6 +35,7 @@ body {
 div.user-cards {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 div.user-card {
