@@ -1,5 +1,6 @@
 import React from 'react';
 import blankAvater from './blankAvatar.png';
+import './style.css';
 
 const UserCard = props => {
   return (

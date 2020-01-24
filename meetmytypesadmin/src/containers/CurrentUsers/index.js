@@ -1,7 +1,9 @@
 import React, { Component, Fragment } from 'react';
+import { Link } from "react-router-dom";
 import Title from '../../components/Title';
 import UserCard from '../../components/UserCard';
 import spinner from '../Spinner-1s-200px.svg';
+import "./style.css";
 
 export default class extends Component {
   state = {
@@ -15,7 +17,7 @@ export default class extends Component {
     )
       .then(res => res.json())
       .then(data => {
-        this.setState({ users: data.Items });
+        this.setState({ users: data });
         this.setState({ loading: false });
       })
       .catch(err => console.log(err));
@@ -29,22 +31,17 @@ export default class extends Component {
             title="Current Users"
             detail="Below is a list of current users"
           />
+          {this.state.loading ? (
+            <div className="loading"><img src={spinner} alt="loading" /></div>
+          ) : (
           <div className="user-cards">
-            {this.state.loading ? (
-              <img src={spinner} alt="loading" />
-            ) : (
-              this.state.users.map(user => {
-                console.dir(user);
-                return (
-                  <UserCard
-                    key={user.UID}
-                    name={user.Nickname}
-                    loveType={user.LoveType}
-                  />
-                );
-              })
-            )}
-          </div>
+            {this.state.users.map(user => (
+              <Link to={"/edit-user/"+user.UID}><UserCard
+                key={user.UID}
+                name={user.Nickname}
+                loveType={user.LoveType}
+              /></Link>))}
+          </div>)}
         </div>
       </Fragment>
     );
