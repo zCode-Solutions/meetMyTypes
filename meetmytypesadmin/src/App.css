@@ -32,41 +32,5 @@ body {
   margin-left: 75px;
 }
 
-div.user-cards {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-div.user-card {
-  border: 1px solid black;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  margin: 1rem;
-  width: 33vh;
-  min-width: 190px;
-  background-color: white;
-}
 
-div.user-card img {
-  border-bottom: 1px black solid;
-}
-div.user-card img,
-div.user-card div {
-  display: block;
-  width: 100%;
-}
-
-.user-card div {
-  display: flex;
-  margin: 0.5rem;
-  width: 100%;
-}
-
-.user-card span {
-  width: 50%;
-}
-.user-card div:last-of-type {
-  margin-bottom: 2rem;
-}
