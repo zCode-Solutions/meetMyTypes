@@ -1,22 +1,22 @@
-:root{
-  --mainRad:#fe2348;
-  --mainBlue:#2699fb;
-  --mainWhite:#f3f3f3;
+:root {
+  --mainRad: #fe2348;
+  --mainBlue: #2699fb;
+  --mainWhite: #f3f3f3;
   /* #fe4e6c */
 }
 
-body{
+body {
   /* font-family: 'Roboto', sans-serif !important; */
   font-family: 'Oswald', sans-serif !important;
   background: var(--mainWhite) !important;
   color: var(--mainBlue) !important;
 }
-.text-sidebar{
+.text-sidebar {
   text-transform: uppercase;
   color: var(--mainWhite);
 }
-.main{
-  margin-left: 15vw;
+.main {
+  margin-left: 180px;
 }
 
 .main div {
@@ -24,20 +24,48 @@ body{
   flex-flow: row wrap;
 }
 
-.user-card {
+.text-title {
+  margin-left: 50px;
+}
+
+.text-detail {
+  margin-left: 75px;
+}
+
+div.user-cards {
+  display: flex;
+  align-items: center;
+}
+
+div.user-card {
   border: 1px solid black;
   padding: 0;
   display: flex;
   flex-direction: column;
   margin: 1rem;
+  width: 33vh;
+  min-width: 190px;
+  background-color: white;
 }
 
-.user-card img,
-.user-card div {
+div.user-card img {
+  border-bottom: 1px black solid;
+}
+div.user-card img,
+div.user-card div {
   display: block;
   width: 100%;
 }
 
 .user-card div {
+  display: flex;
   margin: 0.5rem;
+  width: 100%;
+}
+
+.user-card span {
+  width: 50%;
+}
+.user-card div:last-of-type {
+  margin-bottom: 2rem;
 }
