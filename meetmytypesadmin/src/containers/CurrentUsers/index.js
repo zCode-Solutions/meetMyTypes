@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import Title from '../../components/Title';
 import UserCard from '../../components/UserCard';
+import spinner from '../Spinner-1s-200px.svg';
 
 export default class extends Component {
   state = {
@@ -14,7 +15,6 @@ export default class extends Component {
     )
       .then(res => res.json())
       .then(data => {
-        console.log(data);
         this.setState({ users: data.Items });
         this.setState({ loading: false });
       })
@@ -30,7 +30,9 @@ export default class extends Component {
             detail="Below is a list of current users"
           />
           <div className="user-cards">
-            {!this.state.loading &&
+            {this.state.loading ? (
+              <img src={spinner} alt="loading" />
+            ) : (
               this.state.users.map(user => {
                 console.dir(user);
                 return (
@@ -40,7 +42,8 @@ export default class extends Component {
                     loveType={user.LoveType}
                   />
                 );
-              })}
+              })
+            )}
           </div>
         </div>
       </Fragment>
