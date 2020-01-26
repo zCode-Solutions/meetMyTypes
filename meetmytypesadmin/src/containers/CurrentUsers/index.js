@@ -36,8 +36,7 @@ export default class extends Component {
           ) : (
           <div className="user-cards">
             {this.state.users.map(user => (
-              <Link to={"/edit-user/"+user.UID}><UserCard
-                key={user.UID}
+              <Link to={"/edit-user/"+user.UID} key={user.UID}><UserCard
                 name={user.Nickname}
                 loveType={user.LoveType}
               /></Link>))}
