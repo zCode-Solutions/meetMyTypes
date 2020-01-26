@@ -18,39 +18,39 @@ export default class extends Component {
           )
             .then(res => res.json())
             .then(data => {
-              this.setState({ user: data });
+              this.setState({ user: data});
               this.setState({mainLoveType: data.LoveType});
               this.setState({personalityProfile: data.Description});
               this.setState({top4LoveTypes: data.Top4LoveTypes});
               this.setState({ userLoading: false });
             })
             .catch(err => console.log(err));
-        setTimeout(() => console.log(this.state), 3000);
     }
 
     onSelectMainLoveTypeHandler = type => {
-        this.setState({mainLoveType: type[0]});
+        this.setState({mainLoveType: type});
     }
 
     onSelectTop4LoveTypeHandler = types => {
-        this.setState({top4LoveTypes: types});
+           this.setState({top4LoveTypes: types});
     }
 
     onSubmit = e => {
         e.preventDefault();
-        // console.log(e.target.value);
-        // console.dir(e.target);
         const userInfo = {
-            Gender: this.state.user.Gender,
             Top4LoveTypes: this.state.top4LoveTypes,
             LoveType: this.state.mainLoveType,
-            Nickname: this.state.user.Nickname,
             Description: this.state.personalityProfile,
-            email: this.state.user.email,
-            UID: this.props.match.params.uid,
-            Age: this.state.user.Age
         }
-        console.dir(userInfo);
+        fetch('https://qj87hoxzmk.execute-api.us-east-1.amazonaws.com/Dev/currentUsers/' + this.state.user.UID, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(userInfo)
+        }).then(res => res.json())
+        .then(data => this.props.history.push('current-users'))
+        .catch(err => console.error(err));
     }
 
     render() {
@@ -80,6 +80,7 @@ export default class extends Component {
                         <button
                             type="button"
                             className="input-group-text bg-primary text-white m-4"
+                            onClick={() => this.props.history.push('/current-users')}
                         >
                             Cancel
                         </button>
