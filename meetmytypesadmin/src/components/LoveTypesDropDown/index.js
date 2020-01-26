@@ -21,7 +21,7 @@ export default class extends Component {
 
     render() {
         const selectComponent = this.props.multiple ? 
-            (<select multiple={true} onChange={(e) => this.props.onSelectLoveType(e.target.value)} value={this.props.selectedTypes}>{this.state.loveTypes.map((loveType) => (<option key={loveType.TypeName} value={loveType.TypeName}>{loveType.TypeName}</option>))}</select>)
+            (<select multiple={true} onChange={(e) => {const selectedOptions = Array.from(e.target.selectedOptions).map(opt => opt.value); this.props.onSelectLoveType(selectedOptions);}} value={this.props.selectedTypes}>{this.state.loveTypes.map((loveType) => (<option key={loveType.TypeName} value={loveType.TypeName}>{loveType.TypeName}</option>))}</select>)
         :
             (<select multiple={false} onChange={(e) => this.props.onSelectLoveType(e.target.value)} value={this.props.selectedTypes[0]}>{this.state.loveTypes.map((loveType) => (<option key={loveType.TypeName} value={loveType.TypeName}>{loveType.TypeName}</option>))}</select>);
         
