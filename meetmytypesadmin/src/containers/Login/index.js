@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
 import { Auth } from 'aws-amplify';
 
-export default class Login extends Component {
+// Temporary inline style (so left sidebar doesn't cover form )
+// Will need to utilize boostrap for final style
+var loginStyle = {
+  textAlign: 'right',
+};
+
+export default class extends Component {
   state = {
     email: '',
     password: '',
@@ -37,7 +43,7 @@ export default class Login extends Component {
   render() {
     const { email, password } = this.state;
     return (
-      <div className="login">
+      <div style={loginStyle} className="login">
         <form onSubmit={this.handleLoginSubmit}>
           <label htmlFor="email">Email</label>
           <input

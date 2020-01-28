@@ -8,16 +8,18 @@ import NotFoundPage from './components/NotFoundPage';
 import CurrentUsers from './containers/CurrentUsers';
 import EditUser from './containers/EditUser';
 import Search from './containers/Search';
+import Login from './containers/Login';
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App () {
+function App() {
   return (
     <Fragment>
       <Sidenav />
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route path="/login" exact component={Login} />
         <Route path="/new-user" component={NewUser} />
         <Route path="/current-users" component={CurrentUsers} />
         <Route path="/edit-user/:uid" component={EditUser} />
@@ -28,4 +30,4 @@ function App () {
   );
 }
 
-export default App
+export default App;
