@@ -1,0 +1,21 @@
+.dach-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 25%;
+    border-radius: 10px;
+    border: 0.5px solid #fe4e6c;
+  }
+
+  .total-number{
+      padding: 15px 15px;
+      font-size: 50px;
+      text-align: center;
+  }
+
+  .total-user {
+    padding: 2px 16px;
+    text-align: center;
+  }
+  .line{
+      background-color: #fe4e6c;
+  }
