@@ -46,7 +46,7 @@ const Login = props => {
     } catch (err) {
       // need to add user message
       console.log(err.message);
-      setHelperText('Incorrect Credentials');
+      setHelperText('EMAIL OR PASSWORD INCORRECT');
       setError(true);
     }
   };
@@ -67,7 +67,7 @@ const Login = props => {
             autoFocus
             id="email"
             name="email"
-            label="Email Address"
+            label="Email"
             type="email"
             value={email}
             error={error}
