@@ -18,8 +18,8 @@ function App() {
     <Fragment>
       <Sidenav />
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/login" exact component={Login} />
+        <Route path="/" exact component={Login} />
+        <Route exact path="/home" component={Home} />
         <Route path="/new-user" component={NewUser} />
         <Route path="/current-users" component={CurrentUsers} />
         <Route path="/edit-user/:uid" component={EditUser} />

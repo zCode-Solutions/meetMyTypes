@@ -1,73 +1,60 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import { Auth } from 'aws-amplify';
+import { withRouter } from 'react-router-dom';
 
 // Temporary inline style (so left sidebar doesn't cover form )
-// Will need to utilize boostrap for final style
+// Will need to utilize bootstrap for final style
 var loginStyle = {
   textAlign: 'right',
 };
 
-export default class extends Component {
-  state = {
-    email: '',
-    password: '',
+const Login = props => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const validateForm = () => {
+    return email.length > 0 && password.length > 0;
   };
 
-  onChangeEmail = event => {
-    this.setState({
-      email: event.target.value,
-    });
-  };
-
-  onChangePassword = event => {
-    this.setState({
-      password: event.target.value,
-    });
-  };
-
-  validateForm = () => {
-    return this.state.email.length > 0 && this.state.password.length > 0;
-  };
-
-  handleLoginSubmit = async event => {
+  const handleLoginSubmit = async event => {
+    console.log(email, password);
     event.preventDefault();
     try {
-      await Auth.signIn(this.state.email, this.state.password);
-      alert('logged in');
-      // redirect user to /admin
+      await Auth.signIn(email, password);
+      props.history.replace('/home');
     } catch (err) {
-      alert(err.message);
+      // need to add user message
+      console.log(err.message);
     }
   };
 
-  render() {
-    const { email, password } = this.state;
-    return (
-      <div style={loginStyle} className="login">
-        <form onSubmit={this.handleLoginSubmit}>
-          <label htmlFor="email">Email</label>
-          <input
-            autoFocus
-            name="email"
-            type="text"
-            value={email}
-            placeholder="Enter your email"
-            onChange={this.onChangeEmail}
-          />
+  return (
+    <div style={loginStyle} className="login">
+      <form onSubmit={handleLoginSubmit}>
+        <label htmlFor="email">Email</label>
+        <input
+          autoFocus
+          name="email"
+          type="text"
+          value={email}
+          placeholder="Enter your email"
+          onChange={event => setEmail(event.target.value)}
+        />
 
-          <label htmlFor="email">Password</label>
-          <input
-            name="password"
-            type="password"
-            value={password}
-            placeholder="Enter your password"
-            onChange={this.onChangePassword}
-          />
-          <button disabled={!this.validateForm()} type="submit">
-            Login
-          </button>
-        </form>
-      </div>
-    );
-  }
-}
+        <label htmlFor="email">Password</label>
+        <input
+          name="password"
+          type="password"
+          value={password}
+          placeholder="Enter your password"
+          onChange={event => setPassword(event.target.value)}
+        />
+        <button disabled={!validateForm()} type="submit">
+          Login
+        </button>
+      </form>
+    </div>
+  );
+};
+
+export default withRouter(Login);
