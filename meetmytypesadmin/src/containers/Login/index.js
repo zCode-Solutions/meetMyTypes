@@ -1,16 +1,37 @@
 import React, { useState } from 'react';
 import { Auth } from 'aws-amplify';
 import { withRouter } from 'react-router-dom';
+import { makeStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import TextField from '@material-ui/core/TextField';
+import Typography from '@material-ui/core/Typography';
+import Container from '@material-ui/core/Container';
 
-// Temporary inline style (so left sidebar doesn't cover form )
-// Will need to utilize bootstrap for final style
-var loginStyle = {
-  textAlign: 'right',
-};
+const useStyles = makeStyles(theme => ({
+  paper: {
+    marginTop: theme.spacing(8),
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
+  form: {
+    marginTop: theme.spacing(1),
+  },
+  submit: {
+    margin: theme.spacing(3, 0, 2),
+  },
+  textColor: {
+    color: '#000000',
+  },
+}));
 
 const Login = props => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [helperText, setHelperText] = useState('');
+  const [error, setError] = useState(false);
+  const classes = useStyles();
 
   const validateForm = () => {
     return email.length > 0 && password.length > 0;
@@ -25,35 +46,62 @@ const Login = props => {
     } catch (err) {
       // need to add user message
       console.log(err.message);
+      setHelperText('Incorrect Credentials');
+      setError(true);
     }
   };
 
   return (
-    <div style={loginStyle} className="login">
-      <form onSubmit={handleLoginSubmit}>
-        <label htmlFor="email">Email</label>
-        <input
-          autoFocus
-          name="email"
-          type="text"
-          value={email}
-          placeholder="Enter your email"
-          onChange={event => setEmail(event.target.value)}
-        />
-
-        <label htmlFor="email">Password</label>
-        <input
-          name="password"
-          type="password"
-          value={password}
-          placeholder="Enter your password"
-          onChange={event => setPassword(event.target.value)}
-        />
-        <button disabled={!validateForm()} type="submit">
-          Login
-        </button>
-      </form>
-    </div>
+    <Container component="main" maxWidth="xs">
+      <CssBaseline />
+      <div className={classes.paper}>
+        <Typography className={classes.textColor} component="h1" variant="h5">
+          Sign In
+        </Typography>
+        <form onSubmit={handleLoginSubmit} className={classes.form} noValidate>
+          <TextField
+            variant="outlined"
+            margin="normal"
+            required
+            fullWidth
+            autoFocus
+            id="email"
+            name="email"
+            label="Email Address"
+            type="email"
+            value={email}
+            error={error}
+            helperText={helperText}
+            onChange={event => setEmail(event.target.value)}
+          />
+          <TextField
+            variant="outlined"
+            margin="normal"
+            required
+            fullWidth
+            autoFocus
+            id="password"
+            name="password"
+            label="Password"
+            type="password"
+            value={password}
+            error={error}
+            helperText={helperText}
+            onChange={event => setPassword(event.target.value)}
+          />
+          <Button
+            type="submit"
+            fullWidth
+            variant="contained"
+            color="primary"
+            className={classes.submit}
+            disabled={!validateForm()}
+          >
+            Login
+          </Button>
+        </form>
+      </div>
+    </Container>
   );
 };
 
