@@ -2,9 +2,9 @@
 
 ### Zachary Farley
 ### Anthony Tweed
-### Jongkoy
+### Nathaniel Sawit
 ### Jason Brunelle
-### Musiteli Muboso
-### Vanessage Mercado
+### Matthew Chickoree
+### Mohamed Eshaftri
 
 ## Contributions
