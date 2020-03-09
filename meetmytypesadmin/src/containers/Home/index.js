@@ -11,17 +11,17 @@ export default class extends Component {
     loveTypes:[]
   };
   componentDidMount() {
-    const url1 = "https://8hz8yqsjgd.execute-api.us-east-1.amazonaws.com/mt-dev/dashboard";
+    const url1 = "https://ojivm05n6c.execute-api.us-east-1.amazonaws.com/dev/get-current-users-num";
     fetch(url1)
       .then(res => res.json())
       .then(data => this.setState({ totalUsers: data.Count })); 
 
-    const url2 = "https://8hz8yqsjgd.execute-api.us-east-1.amazonaws.com/mt-dev/love-type";
+    const url2 = "https://ojivm05n6c.execute-api.us-east-1.amazonaws.com/dev/get-lovetype-num";
       fetch(url2)
         .then(res => res.json())
         .then(data => this.setState( {loveTypes: data }));  
 
-    const url3 = "https://8hz8yqsjgd.execute-api.us-east-1.amazonaws.com/mt-dev/new-user";
+    const url3 = "https://ojivm05n6c.execute-api.us-east-1.amazonaws.com/dev/get-new-users-num";
       fetch(url3)
         .then(res => res.json())
         .then(data => this.setState( {new_user: data }));  
