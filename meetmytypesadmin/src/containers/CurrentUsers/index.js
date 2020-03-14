@@ -24,6 +24,9 @@ export default class extends Component {
   }
 
   render() {
+    const user = this.state.users.map(user => {
+      return <UserCard key={user.id} user={user}/>;
+    });
     return (
       <Fragment>
         <div className="main">
@@ -31,6 +34,7 @@ export default class extends Component {
             title="Current Users"
             detail="Below is a list of current users"
           />
+
           {this.state.loading ? (
             <div className="loading"><img src={spinner} alt="loading" /></div>
           ) : (

@@ -18,7 +18,7 @@ export default () => {
                 <div className="input-group-append">
                   <button
                     type="submit"
-                    className="input-group-text bg-primary text-white"
+                    className="input-group-text bg-danger text-white"
                   >
                     Search
                   </button>
@@ -28,6 +28,7 @@ export default () => {
           </div>
         </div>
       </div>
+      <hr />
     </Fragment>
   );
 };
