@@ -21,7 +21,6 @@ export default class App extends Component {
     this.setState({ user_id: id });
   };
 
-
   render() {
     return (
       <Fragment>

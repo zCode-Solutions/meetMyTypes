@@ -25,6 +25,9 @@ export default class extends Component {
   }
 
   render() {
+    const user = this.state.users.map(user => {
+      return <UserCard key={user.id} user={user}/>;
+    });
     return (
       <Fragment>
         <div className="main">
