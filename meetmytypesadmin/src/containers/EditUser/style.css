@@ -1,19 +1,18 @@
-.btn-primary:hover {
-    color: #fe4e6c;
-    background-color: #fe4e6c !important;
-  }
-  
-  .btn-primary:focus {
-    color: #fe2348;
-    background-color: #fe2348!important;
-  }
-  
-  .btn-primary:active {
-    color: white;
-    background-color: #fe4e6c  !important;
-  }
 
-  .btn-primary {
-    color: white;
-    background-color: #fe2348!important;
-  }
+.main div.edit-user {
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    width: 100%
+}
+
+.main div.edit-user span {
+    margin: 24px;
+    width: 15vw;
+}
+
+div.input-group {
+    display: flex;
+    padding: 1rem;
+}

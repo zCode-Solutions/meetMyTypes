@@ -9,8 +9,8 @@ import CurrentUsers from "./containers/CurrentUsers";
 import Search from "./containers/Search";
 import EditUser from "./containers/EditUser";
 
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default class App extends Component {
   state = {

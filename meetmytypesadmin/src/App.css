@@ -1,22 +1,36 @@
-:root{
-  --mainRad:#fe2348;
-  --mainBlue:#2699fb;
-  --mainWhite:#f3f3f3;
+:root {
+  --mainRad: #fe2348;
+  --mainBlue: #2699fb;
+  --mainWhite: #f3f3f3;
   /* #fe4e6c */
 }
 
-body{
+body {
   /* font-family: 'Roboto', sans-serif !important; */
   font-family: 'Oswald', sans-serif !important;
   background: var(--mainWhite) !important;
   color: var(--mainBlue) !important;
 }
-.text-sidebar{
+.text-sidebar {
   text-transform: uppercase;
   color: var(--mainWhite);
 }
-.main{
-  margin-left: 15vw;
+.main {
+  margin-left: 180px;
 }
+
+.main div {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.text-title {
+  margin-left: 50px;
+}
+
+.text-detail {
+  margin-left: 75px;
+}
+
 
 
