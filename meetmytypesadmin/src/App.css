@@ -15,11 +15,11 @@ body {
   text-transform: uppercase;
   color: var(--mainWhite);
 }
-.main {
-  margin-left: 180px;
+.main{
+  margin-left: 15vw;
 }
 
-.main div {
+/* .main div {
   display: flex;
   flex-flow: row wrap;
 }
@@ -30,7 +30,7 @@ body {
 
 .text-detail {
   margin-left: 75px;
-}
+} */
 
 
 

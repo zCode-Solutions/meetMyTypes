@@ -2,13 +2,12 @@ import React, { Fragment, Component } from "react";
 import { Switch, Route } from "react-router-dom";
 
 import Sidenav from "./components/Sidenav";
-import Home from "./components/Home";
+import Home from "./containers/Home";
 import NewUser from "./containers/NewUser";
 import NotFoundPage from "./components/NotFoundPage";
 import CurrentUsers from "./containers/CurrentUsers";
 import Search from "./containers/Search";
 import EditUser from "./containers/EditUser";
-
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -28,7 +27,6 @@ export default class App extends Component {
         <Sidenav />
         <Switch>
           <Route exact path="/" component={Home} />
-
           <Route
             path="/new-user"
             render={props => (
