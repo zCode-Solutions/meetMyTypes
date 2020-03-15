@@ -35,7 +35,7 @@ export default class App extends Component {
           />
           <Route path="/current-users" component={CurrentUsers} />
           <Route path="/search" component={Search} />
-          <Route path="/edit_user" component={EditUser} />
+          <Route path="/edit-user/:uid" component={EditUser} />
           <Route component={NotFoundPage} />
         </Switch>
       </Fragment>
