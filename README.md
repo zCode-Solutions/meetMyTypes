@@ -5,6 +5,9 @@ For the past 4 years Tem’ the Matchmaker has been delivering matchmaking event
 
 In addition to helping Tem achieve his goal he has allowed a group of beginner developers to work on the project to help improve their own skill-set. For any developers who find this project interesting and would like to contribute and help make it flourish we will be building it out for the duration of December 2019 - March 2020 (estimated) Let's grow and build and improve together!
 
+## dev API link
+If you wish to access the open API documentation link please [click here](https://app.swaggerhub.com/apis-docs/zCode-Solutions/meetMyTypes-mobile-api-doc/1.0.0#/)
+
 ## Dev environment setup
 1. npm install 
 2. npm start
