@@ -5,19 +5,18 @@ For the past 4 years Tem’ the Matchmaker has been delivering matchmaking event
 
 In addition to helping Tem achieve his goal he has allowed a group of beginner developers to work on the project to help improve their own skill-set. For any developers who find this project interesting and would like to contribute and help make it flourish we will be building it out for the duration of December 2019 - March 2020 (estimated) Let's grow and build and improve together!
 
-## Using the Meet my Types website
-This repo is meant to hold the Administrator Website for the admin Tem of Meet My Types Below is the list of features for the client to use.
-1. Update user profiles
-2. To be continued....
+## Dev environment setup
+1. npm install 
+2. npm start
 
 ## Contribution Guidelines
-If you're interested in contributing and growing your skill-set further please refer to the [Contribution Docs](https://github.com/zCode-Solutions/meetMyTypes/blob/dev/CONTRIBUTING.md). Before contributing please look through the [Code of conduct](https://github.com/zCode-Solutions/meetMyTypes/blob/dev/CODE_OF_CONDUCT.md) and make sure you comply.
+If you're interested in contributing and growing your skill-set further please refer to the [Contribution Docs](https://github.com/zCode-Solutions/meetMyTypes/blob/dev/docs/CONTRIBUTING.md). Before contributing please look through the [Code of conduct](https://github.com/zCode-Solutions/meetMyTypes/blob/dev/CODE_OF_CONDUCT.md) and make sure you comply.
 
 ## Project Scope
-For details on the scope of this project please refer to this document [Project Scope](https://github.com/zCode-Solutions/meetMyTypes/blob/dev/PROJECT_SCOPE.md)
+For details on the scope of this project please refer to this document [Project Scope](https://github.com/zCode-Solutions/meetMyTypes/blob/dev/docs/PROJECT_SCOPE.md)
 ## How can you Learn from this?
-Check out this doc to see how you can use this repo to level up your own skills! [Learn from me](https://github.com/zCode-Solutions/meetMyTypes/blob/dev/LEARN_FROM_ME.md)
+Check out this doc to see how you can use this repo to level up your own skills! [Learn from me](https://github.com/zCode-Solutions/meetMyTypes/blob/dev/docs/LEARN_FROM_ME.md)
 
 # Authors
-Curious for whose on the team? Checkout the [Authors file](https://github.com/zCode-Solutions/meetMyTypes/blob/dev/AUTHORS.md)
+Curious for whose on the team? Checkout the [Authors file](https://github.com/zCode-Solutions/meetMyTypes/blob/dev/docs/AUTHORS.md)
 
